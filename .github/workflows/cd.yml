@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      
+
 jobs:
   cd:
     runs-on: ubuntu-latest
@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: npm run build
       - name: Deployment
-        run: npm run deploy -- -r git@github.com:MChimali/CLOUD-github-automatic.git
+        run: npm run deploy -- -r git@github.com:MChimali/cloud-workflow-gh-pages.git
